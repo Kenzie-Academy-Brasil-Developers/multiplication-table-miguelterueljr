@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Multiplicação</title>
+</head>
+<body>
+    <h1>Multiplication Table</h1>
+
+    <script>
+
+function montaTabela(n) { // Substitua "nomeDaSuaFuncao" por um nome mais apropriado
+// escreve a coluna inicial
+
+    let x = [];
+    let tabela
+    for (let i = 0; i <= n; i++) { // faz o loop até o numero de linhas que quero.
+        x[i] = []; // o que siginifica ? siginifica q esse meu array esta recebendo um novo array, este está vazio.
+         // ate aqui criei as linhas de 1 a 10, preciso agora criar as colunas. 
+         for (let c = 0; c <=n; c++) {
+            x[i][c] = []                  // ate aqui consegui criar as colunas e as linhas com os dados que o usuario solicitou.
+            x[i][c] += [i*c] // aqui fiz a multiplicacao de linha por coluna e mandei pro array X
+              
+         }
+    
+         
+    }
+       
+    console.table(x)
+    // TODO: escrever dois loops aninhados para desenhar o array bidimencional e monstar o restante da tabela no console.
+}
+montaTabela()
+    </script>
+</body>
+</html>
